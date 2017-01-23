@@ -105,6 +105,7 @@ export default {
         replacements.count
       );
     } catch (err) {
+      if (replacements.hasOwnProperty('fallback')) return replacements.fallback;
       return this._handleMissingTranslation(key, replacements);
     }
     return this._replace(translation, replacements);
