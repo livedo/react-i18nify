@@ -10,6 +10,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _I18n = require('./I18n');
 
 var _I18n2 = _interopRequireDefault(_I18n);
@@ -62,11 +66,11 @@ var Translate = function (_BaseComponent) {
 }(_Base2.default);
 
 Translate.propTypes = {
-  value: _react2.default.PropTypes.string.isRequired,
-  dangerousHTML: _react2.default.PropTypes.bool,
+  value: _propTypes2.default.string.isRequired,
+  dangerousHTML: _propTypes2.default.bool,
   /**
    * Optional styling
    */
-  style: _react2.default.PropTypes.objectOf(_react2.default.PropTypes.oneOfType([_react2.default.PropTypes.number, _react2.default.PropTypes.string]))
+  style: _propTypes2.default.objectOf(_propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.string]))
 };
 exports.default = Translate;
