@@ -2,26 +2,27 @@
 /* eslint react/no-danger: "off" */
 
 import React from 'react';
+import PropTypes from 'prop-types';
 import I18n from './I18n';
 import BaseComponent from './Base';
 
 export default class Localize extends BaseComponent {
 
   static propTypes = {
-    value: React.PropTypes.oneOfType([
-      React.PropTypes.string,
-      React.PropTypes.number,
-      React.PropTypes.object]).isRequired,
-    options: React.PropTypes.object,
-    dateFormat: React.PropTypes.string,
-    dangerousHTML: React.PropTypes.bool,
+    value: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.number,
+      PropTypes.object]).isRequired,
+    options: PropTypes.object,
+    dateFormat: PropTypes.string,
+    dangerousHTML: PropTypes.bool,
     /**
      * Optional styling
      */
-    style: React.PropTypes.objectOf(
-      React.PropTypes.oneOfType([
-        React.PropTypes.number,
-        React.PropTypes.string,
+    style: PropTypes.objectOf(
+      PropTypes.oneOfType([
+        PropTypes.number,
+        PropTypes.string,
       ])
     ),
   };
