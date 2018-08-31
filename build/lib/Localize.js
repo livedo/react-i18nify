@@ -8,6 +8,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _I18n = require('./I18n');
 
 var _I18n2 = _interopRequireDefault(_I18n);
@@ -51,8 +55,8 @@ var Localize = function (_BaseComponent) {
 }(_Base2.default);
 
 Localize.propTypes = {
-  value: _react2.default.PropTypes.oneOfType([_react2.default.PropTypes.string, _react2.default.PropTypes.number, _react2.default.PropTypes.object]).isRequired,
-  options: _react2.default.PropTypes.object,
-  dateFormat: _react2.default.PropTypes.string
+  value: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number, _propTypes2.default.object]).isRequired,
+  options: _propTypes2.default.object,
+  dateFormat: _propTypes2.default.string
 };
 exports.default = Localize;

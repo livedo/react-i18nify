@@ -1,13 +1,14 @@
 /* eslint no-underscore-dangle: "off" */
 
 import React from 'react';
+import PropTypes from 'prop-types';
 import I18n from './I18n';
 import BaseComponent from './Base';
 
 export default class Translate extends BaseComponent {
 
   static propTypes = {
-    value: React.PropTypes.string.isRequired,
+    value: PropTypes.string.isRequired,
   };
 
   otherProps = () => {
